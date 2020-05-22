@@ -1,5 +1,9 @@
 # Rust
 **/target/
 
+# Project
+/main
+/main.rs
+
 # OS
 .DS_Store
