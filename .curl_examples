@@ -1,5 +1,5 @@
 # POST
-curl -i -X POST -H 'Content-type: application/json' -d '{"id":1,"code":"blahblah","language":"rust","completed":false}' http://localhost:3030/functions
+curl -i -X POST -H 'Content-type: application/json' -d '{"id":1,"code":"fn main() {\n  println!(\"Hello, world!\");\n}","language":"rust","version":"1.45.0-nightly"}' http://localhost:3030/functions
 
 # GET
 curl -i http://localhost:3030/functions
