@@ -2,5 +2,6 @@ version: '3.6'
 
 services:
   manager:
-
+    # TODO
   cli:
+    # TODO
