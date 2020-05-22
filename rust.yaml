@@ -1,0 +1,11 @@
+service: my-serverless-test
+runtime:
+  language: rust
+  version: 1.45.0-nightly
+functions:
+  hello_world:
+    handler: handler.hello_world
+    events:
+      - http:
+          path: /say_hello
+          method: get
