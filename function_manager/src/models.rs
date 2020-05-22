@@ -13,7 +13,8 @@ pub fn blank_db() -> Db {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Function {
     pub id: u64,
-    pub text: String,
+    pub code: String,
+    pub language: String,
     pub completed: bool,
 }
 

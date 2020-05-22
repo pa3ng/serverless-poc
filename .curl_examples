@@ -1,0 +1,5 @@
+# POST
+curl -i -X POST -H 'Content-type: application/json' -d '{"id":1,"code":"blahblah","language":"rust","completed":false}' http://localhost:3030/functions
+
+# GET
+curl -i http://localhost:3030/functions
