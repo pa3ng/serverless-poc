@@ -15,7 +15,7 @@ pub struct Function {
     pub id: u64,
     pub code: String,
     pub language: String,
-    pub completed: bool,
+    pub version: String,
 }
 
 // The query parameters for list_functions.
