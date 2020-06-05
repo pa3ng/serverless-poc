@@ -17,6 +17,10 @@ fn main() {
     }
     pretty_env_logger::init();
 
+    test_post_function();
+}
+
+fn test_post_function() {
     let mut file = File::open("../functions/handler.rs").unwrap();
     let mut contents = String::new();
     file.read_to_string(&mut contents).unwrap();
@@ -41,7 +45,7 @@ fn main() {
 }
 
 fn test_reader_writer() -> std::io::Result<()> {
-    let mut file = File::open("functions/handler.rs")?;
+    let mut file = File::open("../functions/handler.rs")?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
     println!("{:?}", contents);
